@@ -1,0 +1,142 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgb(173, 173, 242), rgb(205, 34, 205));
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    margin-top: 12px;
+    font-size: xx-large;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 955px;
+    border: 5px solid black;
+    margin: auto;
+    border-radius: 15px;
+    padding: 33px;
+    height: 60vh;
+    overflow-y: auto;
+    margin-bottom: 23px;
+    background-color:( rgb(173,173, 234),rgb(168, 112, 168)); 
+}
+
+.message {
+    background-color: rgb(235, 242, 239);
+    width: 24%;
+    padding: 10px;
+    margin: 17px 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.message:hover {
+    background-color: rgb(237, 208, 231);
+    transform: scale(1.02);
+}
+
+.left {
+    float: left;
+    clear: both;
+}
+
+.right {
+    float: right;
+    clear: both;
+}
+
+#send-container {
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 1031px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px solid black;
+    
+}
+
+#messageInp {
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 35px;
+    font-family: fantasy;
+    font-size: 20px;
+    transition: border-color 0.3s;
+}
+
+#messageInp:focus {
+    border-color: rgb(201, 201, 232);
+    outline: none;
+}
+
+.btn {
+    width: 8%;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 35px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(94, 94, 236);
+    color: white;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        height: 70%;
+    }
+
+    .message {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #messageInp {
+        width: 70%;
+        font-size: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .btn {
+        width: 20%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        height: 70%;
+    }
+
+    .message {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #messageInp {
+        width: 60%;
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 30%;
+    }
+}
